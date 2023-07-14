@@ -1,12 +1,12 @@
 ﻿using Dapper;
-using Kodee.Models.AppointmentsTypes;
+using Kodee.One.Models.AppointmentsTypes;
 using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Threading.Tasks;
 
-namespace Kodee.One.Models.AppointmentsTypes
+namespace Kodee.Models.AppointmentsTypes
 {
     /// <summary>
     /// AppointmentsTypeRepository 클래스는 IAppointmentsTypeRepository 인터페이스를 구현하여 예약 종류 관련 데이터 액세스 작업을 처리합니다.
