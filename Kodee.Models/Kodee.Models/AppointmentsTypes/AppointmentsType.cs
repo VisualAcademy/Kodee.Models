@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Kodee.One.Models.AppointmentsTypes
+namespace Kodee.Models.AppointmentsTypes
 {
     /// <summary>
     /// AppointmentType 모델 클래스는 예약 종류를 나타냅니다.

@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using Kodee.Models.AppointmentsTypes;
 using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;

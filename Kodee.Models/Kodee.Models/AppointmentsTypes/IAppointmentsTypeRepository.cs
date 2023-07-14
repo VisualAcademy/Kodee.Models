@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Kodee.Models.AppointmentsTypes;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Kodee.One.Models.AppointmentsTypes
