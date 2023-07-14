@@ -1,8 +1,7 @@
-﻿using Kodee.Models.AppointmentsTypes;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Kodee.One.Models.AppointmentsTypes
+namespace Kodee.Models.AppointmentsTypes
 {
     /// <summary>
     /// IAppointmentsTypeRepository 인터페이스는 예약 종류 관련 데이터 액세스 작업을 정의합니다.
