@@ -1,9 +1,9 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Kodee.Models.Investigations.Employees
+namespace Kodee.Models.Investigations.Vendors
 {
-    public class EmployeeInvestigation
+    public class VendorInvestigation
     {
         [Key]
         public long Id { get; set; }
@@ -20,7 +20,7 @@ namespace Kodee.Models.Investigations.Employees
         public string Name { get; set; } = "";
 
         [Required]
-        public DateTimeOffset Start { get; set; }
+        public DateTimeOffset Start { get; set; } = DateTimeOffset.UtcNow;
 
         public bool Active { get; set; } = true;
 
@@ -30,11 +30,15 @@ namespace Kodee.Models.Investigations.Employees
         [StringLength(450)]
         public string AssignedToUserId { get; set; } = "";
 
-        [StringLength(35)]
-        public string NigcClassification { get; set; } = "";
+        [Required]
+        public DateTimeOffset CreatedAt { get; set; } = DateTimeOffset.UtcNow;
 
-        public bool OmitNOR { get; set; } = false;
+        [StringLength(70)]
+        public string CreatedBy { get; set; } = "";
 
-        public bool OmitNOLD { get; set; } = false;
+        public long? VendorId { get; set; }
+
+        [Required]
+        public int ApplicantType { get; set; }
     }
 }
